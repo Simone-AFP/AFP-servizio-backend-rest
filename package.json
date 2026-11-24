@@ -1,0 +1,22 @@
+{
+  "name": "servizio-backend-rest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
+  "dependencies": {
+    "hono": "^3.0.0",
+    "sql.js": "^1.8.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/sql.js": "^1.4.11",
+    "tsx": "^4.22.0",
+    "typescript": "^5.5.0"
+  }
+}

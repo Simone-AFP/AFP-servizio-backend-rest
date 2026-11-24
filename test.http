@@ -1,0 +1,53 @@
+### GET root
+GET http://localhost:3000/
+Accept: application/json
+
+
+### GET health
+GET http://localhost:3000/health
+Accept: application/json
+
+### GET categories
+GET http://localhost:3000/api/categories
+Accept: application/json
+
+### GET tasks
+GET http://localhost:3000/api/tasks
+Accept: application/json
+
+### GET task by id
+GET http://localhost:3000/api/tasks/1
+Accept: application/json
+
+### POST create task
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "title": "New Task",
+  "description": "This is a new task",
+  "completed": 0,
+  "categoryIds": [1]
+}
+
+### PUT update task
+PUT http://localhost:3000/api/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Updated Task",
+  "description": "This task has been updated",
+  "completed": 1,
+  "categoryIds": [2]
+}
+
+### PATCH update task
+PATCH http://localhost:3000/api/tasks/1
+Content-Type: application/json
+
+{
+  "completed": 0
+}
+
+### DELETE task
+DELETE http://localhost:3000/api/tasks/1

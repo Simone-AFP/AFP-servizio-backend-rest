@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App Semplice</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header>
+        <h1>Todo App</h1>
+        <p>Gestisci i tuoi task con categorie e stato completato.</p>
+      </header>
+
+      <section class="panel">
+        <h2>Nuovo task</h2>
+        <form id="task-form">
+          <label>
+            Titolo
+            <input id="title" type="text" required />
+          </label>
+          <label>
+            Descrizione
+            <textarea id="description" rows="3"></textarea>
+          </label>
+          <div class="category-group" id="categories"></div>
+          <button type="submit">Aggiungi task</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Task</h2>
+        <div id="tasks" class="task-list"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
